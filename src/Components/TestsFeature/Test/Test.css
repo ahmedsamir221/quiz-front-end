@@ -1,0 +1,27 @@
+.test-head {
+  margin: 2rem;
+  background-color: #ffd500;
+  border-radius: 0.7rem;
+}
+
+.test-head-item {
+  margin: 2rem;
+  padding: 1rem;
+  color: rgb(77, 75, 75);
+  font-size: 2rem;
+}
+
+.get-degree {
+  border-radius: 0.7rem;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #ffd500;
+  color: white;
+}
+
+
+.load-img{
+  display: flex;
+  align-items: center;
+}

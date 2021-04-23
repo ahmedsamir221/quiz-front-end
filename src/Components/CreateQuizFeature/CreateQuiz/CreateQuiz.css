@@ -1,0 +1,16 @@
+.h1-questions {
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(77, 75, 75);
+}
+
+.save-quiz {
+  background-color: #ffd500;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+}

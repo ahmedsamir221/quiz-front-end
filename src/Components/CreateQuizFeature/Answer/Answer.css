@@ -1,0 +1,65 @@
+.answer {
+  margin: 1rem;
+  border: 1px solid rgb(223, 221, 221);
+  border-radius: 0.7rem;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answer-top {
+  margin: 1rem;
+  padding: 1rem;
+  color: rgb(77, 75, 75);
+  font-size: 1.5rem;
+}
+
+.answer-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.answer-edit {
+  background-color: white;
+  background-image: url("./edit.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 35px;
+  padding-left: 35px;
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: rgb(173, 173, 173);
+}
+
+.answer-delete {
+  background-color: white;
+  background-image: url("./delete.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 35px;
+  padding-left: 35px;
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: rgb(173, 173, 173);
+}
+
+.answer-save {
+  background-color: rgb(45, 170, 166);
+  color: white;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.answer-input {
+  border: 1px solid rgb(180, 179, 179);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  width: 80%;
+  color: rgb(110, 107, 107);
+}
