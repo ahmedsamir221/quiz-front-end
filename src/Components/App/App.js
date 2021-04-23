@@ -26,11 +26,13 @@ class App extends React.Component {
   }
 
   success = (response) => {
+    console.log('done ahmed............');
     sessionStorage.token = response.tokenId;
     sessionStorage.name = response.profileObj.givenName;
     this.setState({ isLogedIn: true });
   };
   failure = () => {
+    console.log('not done ahmed............');
     sessionStorage.token = "";
     this.setState({ isLogedIn: false });
   };
