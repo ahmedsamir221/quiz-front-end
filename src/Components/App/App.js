@@ -6,7 +6,7 @@ import Quizzes from "./../MyQuizzesFeature/Quizzes/Quizzes";
 import Tests from "../TestsFeature/Tests/Tests";
 import "./App.css";
 import logo from "./logo2.jpg";
-import Email from "./../CreateQuizFeature/Email/Email";
+
 
 class App extends React.Component {
   constructor() {
@@ -15,11 +15,11 @@ class App extends React.Component {
       isLogedIn: false,
       active:
         window.location.href ===
-        "http://localhost:3000/createQuiz"
+        "https://create-quiz-easy.herokuapp.com/createQuiz"
           ? 1
-          : window.location.href === "http://localhost:3000/myQuizzes"
+          : window.location.href === "https://create-quiz-easy.herokuapp.com/myQuizzes"
           ? 2
-          : window.location.href === "http://localhost:3000/tests"
+          : window.location.href === "https://create-quiz-easy.herokuapp.com/tests"
           ? 3
           : 0,
     };
