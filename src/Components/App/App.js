@@ -151,6 +151,7 @@ class App extends React.Component {
             clientId="1082313788044-ru8kfvsc9j6okm8itc5al91l4qf9kond.apps.googleusercontent.com"
             buttonText="Login"
             onSuccess={this.success}
+            onFailure={this.failure}
             cookiePolicy={"single_host_origin"}
             isSignedIn={true}
           />
