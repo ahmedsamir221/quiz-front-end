@@ -15,6 +15,10 @@ class Name extends React.Component {
     });
   };
 
+  componentDidUpdate() {
+    this.in?.focus();
+  }
+
   render() {
     let { name, updateNameClickHandler } = this.props;
     let edit = this.state.edit;
@@ -24,7 +28,7 @@ class Name extends React.Component {
         <div className="question-head-block">
           <textarea
             className="question-name-input"
-            ref={(n) => (input = n)}
+            ref={(n) => {input = n; this.in = n;}}
             defaultValue={name}
           ></textarea>
           <button

@@ -118,6 +118,7 @@ body {
 }
 
 
+
 /* animation */
 .loading {
   margin: 2rem;
@@ -208,3 +209,6 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+

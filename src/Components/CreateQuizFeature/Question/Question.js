@@ -16,6 +16,10 @@ class Question extends React.Component {
     });
   };
 
+  componentDidUpdate() {
+    this.in?.focus();
+  }
+
   render() {
     let {
       i,
@@ -32,7 +36,7 @@ class Question extends React.Component {
           <div className="question-top">
             <textarea
               className="question-input"
-              ref={(n) => (input = n)}
+              ref={(n) => {input = n; this.in = n;}}
               defaultValue={children.question}
             ></textarea>
             <button
