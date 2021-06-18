@@ -7,33 +7,36 @@ import Tests from "../TestsFeature/Tests/Tests";
 import "./App.css";
 import logo from "./logo2.jpg";
 
-
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      isLogedIn: false,
+      isLogedIn: sessionStorage.isLogedIn,
       active:
         window.location.href ===
         "https://create-quiz-easy.herokuapp.com/createQuiz"
           ? 1
-          : window.location.href === "https://create-quiz-easy.herokuapp.com/myQuizzes"
+          : window.location.href ===
+            "https://create-quiz-easy.herokuapp.com/myQuizzes"
           ? 2
-          : window.location.href === "https://create-quiz-easy.herokuapp.com/tests"
+          : window.location.href ===
+            "https://create-quiz-easy.herokuapp.com/tests"
           ? 3
           : 0,
     };
   }
 
   success = (response) => {
-    console.log('done ahmed............');
+    console.log("done ahmed............");
     sessionStorage.token = response.tokenId;
     sessionStorage.name = response.profileObj.givenName;
+    sessionStorage.isLogedIn = true;
     this.setState({ isLogedIn: true });
   };
   failure = () => {
-    console.log('not done ahmed............');
+    console.log("not done ahmed............");
     sessionStorage.token = "";
+    sessionStorage.isLogedIn = false;
     this.setState({ isLogedIn: false });
   };
 

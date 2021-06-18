@@ -53,9 +53,14 @@ const mapDispachToProps = (dispach, props) => {
           },
           body: JSON.stringify(quiz),
         })
-          .then((r) => r.text())
-          .then((r) => console.log(r));
-        window.location.href = "/myQuizzes";
+          .then((r) => {
+            window.location.href = "/myQuizzes";
+            return r.text();
+          })
+          .then((r) => console.log(r))
+          .catch(() => {
+            alert("server error try again later.");
+          });
         return;
       }
 
@@ -68,9 +73,14 @@ const mapDispachToProps = (dispach, props) => {
         },
         body: JSON.stringify(quiz),
       })
-        .then((r) => r.text())
-        .then((r) => console.log(r));
-      window.location.href = "/myQuizzes";
+        .then((r) => {
+          window.location.href = "/myQuizzes";
+          return r.text();
+        })
+        .then((r) => console.log(r))
+        .catch(() => {
+          alert("server error try again later.");
+        });
     },
   };
 };
